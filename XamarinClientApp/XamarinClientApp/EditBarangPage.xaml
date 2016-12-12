@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.EditBarangPage">
+    <StackLayout>
+        <Entry x:Name="txtKodeBarang" IsEnabled="False" Text="{Binding KodeBarang}" />
+        <Entry x:Name="txtKategoriId" Text="{Binding KategoriId}" />
+        <Entry x:Name="txtIdJenisMotor" Text="{Binding IdJenisMotor}" />
+        <Entry x:Name="txtNama" Text="{Binding Nama}" />
+        <Entry x:Name="txtStok" Text="{Binding Stok}" />
+        <Entry x:Name="txtHargaBeli" Text="{Binding HargaBeli}" />
+        <Entry x:Name="txtHargaJual" Text="{Binding HargaJual}" />
+        <Entry x:Name="txtTanggalBeli" Text="{Binding TanggalBeli}" />
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnEdit" Text="Edit" />
+            <Button x:Name="btnDelete" Text="Delete" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

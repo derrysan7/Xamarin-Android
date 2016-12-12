@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.JenisMotorPage">
+    <StackLayout>
+        <ListView x:Name="listJenisMotor" ItemsSource="{Binding ListJenisMotor}" RowHeight="100" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical" Padding="25,10,55,15">
+                            <Label HorizontalOptions="Start" FontSize="15" FontAttributes="Bold" Text="{Binding IdJenisMotor}" />
+                            <Label HorizontalOptions="Start" FontSize="15" Text="{Binding NamaMerk}" />
+                            <Label HorizontalOptions="Start" FontSize="15" Text="{Binding NamaJenisMotor}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Add Jenis Motor" x:Name="btnTambah" />
+    </StackLayout>
+</ContentPage>
