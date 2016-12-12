@@ -14,7 +14,7 @@
              This StackLayout you can use for other
              data that you want to have in your menu drawer
         -->
-                <StackLayout BackgroundColor="#e74c3c"
+                <StackLayout BackgroundColor="#3c4fe7"
                      HeightRequest="75">
 
                     <Label Text="Xamarin TAS Derry"
