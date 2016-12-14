@@ -35,7 +35,7 @@ namespace XamarinClientApp
                 Stok = Convert.ToInt32(txtStok.Text),
                 HargaBeli = Convert.ToInt32(txtHargaBeli.Text),
                 HargaJual = Convert.ToInt32(txtHargaJual.Text),
-                TanggalBeli = txtTanggalBeli.Text
+                TanggalBeli = txtTanggalBeli.Date
             };
             _request.AddBody(newBarang);
             try

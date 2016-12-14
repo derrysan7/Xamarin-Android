@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace XamarinClientApp.Models
 {
-    public class Barang
+    public class BarangVM
     {
         public string KodeBarang { get; set; }
         public int KategoriId { get; set; }
+        public string NamaKategori { get; set; }
         public int IdJenisMotor { get; set; }
         public string Nama { get; set; }
         public int Stok { get; set; }

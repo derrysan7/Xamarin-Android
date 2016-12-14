@@ -17,6 +17,7 @@ namespace XamarinClientApp
 
             listBarang.ItemTapped += ListBarang_ItemTapped;
             btnTambah.Clicked += BtnTambah_Clicked;
+            btnSearch.Clicked += BtnSearch_Clicked;
         }
 
         protected override void OnAppearing()
@@ -35,6 +36,11 @@ namespace XamarinClientApp
         private async void BtnTambah_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new TambahBarangPage());
+        }
+
+        private async void BtnSearch_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SearchingPage());
         }
     }
 }

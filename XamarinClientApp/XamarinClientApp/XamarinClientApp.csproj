@@ -61,9 +61,13 @@
     </Compile>
     <Compile Include="MenuItems\MasterPageItem.cs" />
     <Compile Include="Models\Barang.cs" />
+    <Compile Include="Models\BarangVM.cs" />
     <Compile Include="Models\JenisMotor.cs" />
     <Compile Include="Models\Kategori.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchingPage.xaml.cs">
+      <DependentUpon>SearchingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TambahBarangPage.xaml.cs">
       <DependentUpon>TambahBarangPage.xaml</DependentUpon>
     </Compile>
@@ -74,6 +78,7 @@
       <DependentUpon>TambahKategoriPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\BarangViewModel.cs" />
+    <Compile Include="ViewModels\SearchKategori.cs" />
     <Compile Include="ViewModels\JenisMotorViewModel.cs" />
     <Compile Include="ViewModels\KategoriViewModel.cs" />
   </ItemGroup>
@@ -190,6 +195,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SearchingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

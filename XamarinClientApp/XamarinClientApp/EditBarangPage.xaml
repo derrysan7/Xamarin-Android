@@ -10,7 +10,7 @@
         <Entry x:Name="txtStok" Text="{Binding Stok}" />
         <Entry x:Name="txtHargaBeli" Text="{Binding HargaBeli}" />
         <Entry x:Name="txtHargaJual" Text="{Binding HargaJual}" />
-        <Entry x:Name="txtTanggalBeli" Text="{Binding TanggalBeli}" />
+        <DatePicker x:Name="txtTanggalBeli" Date="{Binding TanggalBeli}" />
         <StackLayout Orientation="Horizontal">
             <Button x:Name="btnEdit" Text="Edit" />
             <Button x:Name="btnDelete" Text="Delete" />

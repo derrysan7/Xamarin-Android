@@ -10,7 +10,7 @@
         <Entry x:Name="txtStok" Placeholder="Masukan Stok"/>
         <Entry x:Name="txtHargaBeli" Placeholder="Masukan HargaBeli"/>
         <Entry x:Name="txtHargaJual" Placeholder="Masukan HargaJual"/>
-        <Entry x:Name="txtTanggalBeli" Placeholder="Masukkan Tanggal Beli ex: 12/25/2016"/>
+        <DatePicker x:Name="txtTanggalBeli"/>
         <Button x:Name="btnTambahBarang" Text="Tambah" />
     </StackLayout>
 </ContentPage>
