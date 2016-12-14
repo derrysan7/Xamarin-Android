@@ -19,6 +19,7 @@ namespace XamarinClientApp
             InitializeComponent();
 
             btnSearchBarang.Clicked += btnSearchBarang_Clicked;
+            btnSearchKategori.Clicked += btnSearchKategori_Clicked;
         }
 
         protected override void OnAppearing()
@@ -29,6 +30,13 @@ namespace XamarinClientApp
         private void btnSearchBarang_Clicked(object sender, EventArgs e)
         {
             this.BindingContext = new SearchKategori(txtSearchBar.Text);
+            txtSearchBar.Text = null;
+        }
+
+        private void btnSearchKategori_Clicked(object sender, EventArgs e)
+        {
+            this.BindingContext = new SearchBarang(txtSearchKat.Text);
+            txtSearchKat.Text = null;
         }
     }
 }

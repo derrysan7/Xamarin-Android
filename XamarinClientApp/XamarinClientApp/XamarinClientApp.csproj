@@ -78,6 +78,7 @@
       <DependentUpon>TambahKategoriPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\BarangViewModel.cs" />
+    <Compile Include="ViewModels\SearchBarang.cs" />
     <Compile Include="ViewModels\SearchKategori.cs" />
     <Compile Include="ViewModels\JenisMotorViewModel.cs" />
     <Compile Include="ViewModels\KategoriViewModel.cs" />
